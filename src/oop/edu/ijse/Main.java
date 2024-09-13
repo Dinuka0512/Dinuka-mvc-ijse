@@ -5,7 +5,7 @@
 package oop.edu.ijse;
 
 import java.sql.SQLException;
-import oop.edu.ijse.db.DBConnection;
+import oop.edu.ijse.view.CustomerView;
 
 /**
  *
@@ -17,8 +17,9 @@ public class Main {
      * @param args the command line arguments
      */
     public static void main(String[] args) throws ClassNotFoundException, SQLException {
-        System.out.println("Hello");
-        DBConnection.getInstance().getConnection();
+        CustomerView v1 = new CustomerView();
+        v1.setLocationRelativeTo(null);
+        v1.setVisible(true);
     }
     
 }
